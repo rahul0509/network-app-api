@@ -154,4 +154,6 @@ vite.config.ts.timestamp-*
 # Nx (https://nx.dev/)
 .nx/cache
 .nx/workspace-data
+# .nx/migrate-runs
 .nx/migrate-runs
+
