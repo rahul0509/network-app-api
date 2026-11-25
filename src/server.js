@@ -1,14 +1,7 @@
-const express = require("express");
+// src/server.js
+const app = require("./app");
+const environment = require("./config/environment");
 
-const app = express();
-const port = process.env.PORT || 3000;
-
-app.use(express.json());
-
-app.get("/health", (req, res) => {
-  res.json({ status: "ok" });
-});
-
-app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+app.listen(environment.port, () => {
+  console.log(`API running on http://localhost:${environment.port}`);
 });
